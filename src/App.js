@@ -38,7 +38,7 @@ function App() {
         aria-checked={button.disabled}
         onChange={(e) => checkboxHandler(e.target.checked)}
       />
-      Disable button
+      <label htmlFor='disable-button-checkbox'>Disable button</label>
     </div>
   );
 }
