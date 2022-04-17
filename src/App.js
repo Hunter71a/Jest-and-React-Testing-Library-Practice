@@ -20,6 +20,7 @@ function App() {
       >
         {button.text}
       </button>
+      <input type='checkbox' />
     </div>
   );
 }
