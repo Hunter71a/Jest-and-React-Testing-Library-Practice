@@ -6,9 +6,8 @@ function App() {
     color: 'red',
     text: 'Change to pink',
     disabled: false,
+    disabledColor: 'grey',
   });
-
-  console.log(button);
 
   const changeButton = () => {
     button.color === 'red'
@@ -25,7 +24,7 @@ function App() {
   return (
     <div>
       <button
-        style={{ backgroundColor: button.color }}
+        style={{ backgroundColor: button.disabled ? 'grey' : button.color }}
         onClick={() => changeButton()}
         disabled={button.disabled}
       >
