@@ -27,7 +27,7 @@ test('button has correct initial color', () => {
   });
 
   //expect the button text to be "Change to button one color name"
-  expect(colorButton.textContent).toBe('Change to ' + button.one.name);
+  expect(colorButton).toHaveTextContent('Change to ' + button.one.name);
 });
 
 test('initial conditions', () => {
